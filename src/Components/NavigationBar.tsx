@@ -14,6 +14,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import styled from "styled-components";
+import logoWhite from "../assets/logo-white.png";
 
 //import LogoBlack from "../assets/LogoBlack.png";
 
@@ -45,9 +46,14 @@ export default function DrawerAppBar(props: Props) {
   const drawer = (
     <Box
       onClick={handleDrawerToggle}
-      sx={{ textAlign: "center", color: "#FFFFFF", backgroundColor: "#121212" }}
+      sx={{
+        textAlign: "center",
+        color: "#FFFFFF",
+        backgroundColor: "#121212",
+        fontFamily: "cursive",
+      }}
     >
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h6" sx={{ my: 2, fontFamily: "cursive" }}>
         <MangaStyle>VITC - Anime Realm</MangaStyle>
       </Typography>
       <Divider />
@@ -55,7 +61,7 @@ export default function DrawerAppBar(props: Props) {
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton
-              sx={{ textAlign: "center" }}
+              sx={{ textAlign: "center", fontFamily: "cursive" }}
               onClick={() => handleNavigate(item.toLowerCase())}
             >
               <ListItemText primary={item} />
@@ -89,14 +95,34 @@ export default function DrawerAppBar(props: Props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+          <Box sx={{ height: "8%", width: "10%" }}>
+            <img
+              src={logoWhite}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "contain",
+                paddingTop: "6px",
+              }}
+            />
+          </Box>
+          {/*<Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{
+              flexGrow: 0,
+              paddingRight: "50%",
+              display: {
+                xs: "none",
+                sm: "block",
+                fontFamily: "cursive",
+                fontSize: "1.5em",
+              },
+            }}
           >
             <MangaStyle>VITC - Anime Realm</MangaStyle>
-          </Typography>
-          <Box sx={{ display: { xs: "none", sm: "flex" } }}>
+        </Typography>*/}
+          <Box sx={{ display: { xs: "none", sm: "flex", paddingLeft: "54%" } }}>
             {navItems.map((item) => (
               <Button
                 key={item}
@@ -105,7 +131,8 @@ export default function DrawerAppBar(props: Props) {
                   color: "#FFFFFF",
                   backgroundColor: "##121212",
                   paddingLeft: "60px",
-                  fontSize: "1.2em",
+                  fontFamily: "cursive",
+                  fontSize: "1.0em",
                   "&:hover": {
                     backgroundColor: "#333333",
                   },
