@@ -122,19 +122,31 @@ export default function DrawerAppBar(props: Props) {
           >
             <MangaStyle>VITC - Anime Realm</MangaStyle>
         </Typography>*/}
-          <Box sx={{ display: { xs: "none", sm: "flex", paddingLeft: "54%" } }}>
+          <Box
+            sx={{
+              display: {
+                xs: "none",
+                sm: "flex",
+                paddingLeft: "58.47%",
+                paddingRight: "0%",
+              },
+            }}
+          >
             {navItems.map((item) => (
               <Button
                 key={item}
                 sx={{
                   position: "relative",
                   color: "#FFFFFF",
-                  backgroundColor: "##121212",
-                  paddingLeft: "60px",
+                  backgroundColor: "#121212",
+                  paddingLeft: "30px",
+                  paddingRight: "30px",
+                  height: "8%",
                   fontFamily: "cursive",
-                  fontSize: "1.0em",
+                  fontSize: "0.9em",
                   "&:hover": {
-                    backgroundColor: "#333333",
+                    backgroundColor: "#FFFFFF",
+                    color: "#121212",
                   },
                   "&:focus": {
                     outline: "none",

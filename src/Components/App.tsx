@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import NavigationBar from "./NavigationBar";
 import "../Styles/App.css";
+import HomePage from "./homePage";
 
 function App() {
   const [current_page, setCurrentPage] = useState("home");
@@ -12,6 +13,7 @@ function App() {
       <>
         <NavigationBar setCurrentPage={setCurrentPage} />
         <div className="nav-fixer"></div>
+        <HomePage setCurrentPage={setCurrentPage}></HomePage>
       </>
     );
   } else if (current_page == "events") {
