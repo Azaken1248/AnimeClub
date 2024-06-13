@@ -1,13 +1,6 @@
-// import React from 'react'
-import IconDescription from "./IconDescription.tsx";
-//import Description from "./Description.tsx";
-//import SummaryShortcuts from "./SummaryShortcuts.tsx";
-// import Rohan from './TransalateButton.tsx';
+import IconDescription from "./IconDescription";
 
-interface Props {
-  setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
-}
-const HomePage = ({ setCurrentPage }: Props) => {
+const HomePage = () => {
   return (
     <>
       <IconDescription></IconDescription>
