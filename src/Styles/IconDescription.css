@@ -1,48 +1,233 @@
+@font-face {
+  font-family: 'Nasalization';
+  src: url('../assets/fonts/nasalization-rg.otf') format('opentype');
+}
+
+
 .icon-description {
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(rgba(78, 73, 73, 0.6), rgba(78, 73, 73, 0.6)), url("../assets/titlebg2-grayscale.png");
-    background-blend-mode: darken;
-    background-size: cover;
-    background-position: 700px  0px;
-    color: #2e2a2a;
-    background-color: rgba(63, 60, 60, 0.5);
-    padding: 0.0em;
-    margin-top: 6vh;
-    height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center align vertically */
+  background-image: url("../assets/backgrounds/home.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.icon-description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 1;
+}
+
+.content-box {
+  height: 65%;
+  width: 80%;
+  border: 3px solid transparent;
+  background: rgba(255, 255, 255, 0.2); /* Slightly transparent white background */
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 1em;
+  margin-top: -12rem;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  margin-left: 85%;
+  gap: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 30px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.menu:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.hamburger{
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  border-top: 2px solid black;
+  width: 1.5vw;
+  font-size: 10px;
+  margin-top: 0.5rem;
+}
+
+.line-half {
+  border-top: 2px solid transparent;
+  width: 0.7vw;
+  font-size: 10px;
+  margin-top: 0.5rem;
+}
+
+
+.line-half-color {
+  border-top: 2px solid black;
+  width: 0.7vw;
+  font-size: 10px;
+  margin-top: 0.5rem;
+}
+
+.line-break{
+  display: flex;
+  flex-direction: row;
+}
+
+.content-box h1 {
+  font-family: 'Nasalization', sans-serif; 
+  font-size: 200px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.content-box h1::before {
+  content: attr(data-text); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: rgba(255, 255, 255, 0.5);
+  filter: blur(8px);
+}
+
+.scrollbar {
+  display: flex;
+  flex-direction: row;
+  gap: 72rem;
+  transition: transform 0.3s ease;
+}
+
+.scrollbar:hover{
+  transform: scale(1.02);
+}
+
+.fa-angle-double-down {
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  margin-top: 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+.fa-angle-double-down::before {
+  content: '\f103'; 
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.5);
+  filter: blur(8px);
+  z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .content-box {
+    width: 90%;
+    margin-top: -10rem;
+  }
+
+  .content-box h1 {
+    font-size: 10vw;
+  }
+
+  .content-box h1::before {
+    font-size: 10vw;
+  }
+
+  .scrollbar {
+    gap: 30vw; 
+  }
+
+  .fa-angle-double-down {
+    font-size: 10vw; 
+  }
+
+  .fa-angle-double-down::before {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    width: 95%;
+    margin-top: -8rem;
+  }
+
+  .content-box h1 {
+    font-size: 12vw; 
+  }
+
+  .content-box h1::before {
+    font-size: 12vw;
+  }
+
+  .scrollbar {
+    gap: 20vw; 
+  }
+
+  .fa-angle-double-down {
+    font-size: 12vw; 
+  }
+
+  .fa-angle-double-down::before {
+    font-size: 12vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-box {
     width: 100%;
-    align-items: flex-start; /* Align items to the top */
-}
+    margin-top: -6rem;
+  }
 
-.home-heading {
-    text-align: left; 
-    max-width: 50vw;
-    height: 93vh;
-    line-height: 3;
-    margin-top: 6vh; 
-    position: absolute; 
-    top: 10px; 
-    left: 0; 
-    padding: 2em; 
-    color: #FFFFFF;
-    font-family: 'cursive';
-    
-    background-color: rgba(78, 73, 73, 0.6);
-}
-.home-heading:hover{
-    background-color: rgba(78, 73, 73, 0.8);
-}
+  .content-box h1 {
+    font-size: 15vw; 
+  }
 
-.home-heading h1 {
-    font-size: 5vw;
-}
+  .content-box h1::before {
+    font-size: 15vw;
+  }
 
-.home-heading h2 {
-    font-size: 2vw;
-    font-weight: bold;
-}
+  .scrollbar {
+    gap: 10vw; 
+  }
 
-.home-title-image {
-    width: 30vw;
-    margin-left: auto; 
+  .fa-angle-double-down {
+    font-size: 15vw; 
+  }
+
+  .fa-angle-double-down::before {
+    font-size: 15vw;
+  }
 }
