@@ -43,64 +43,6 @@
   margin-top: -12rem;
 }
 
-.nav{
-  display: flex;
-  flex-direction: row;
-  margin-left: 85%;
-  gap: 20px;
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  align-items: center;
-  font-family: Helvetica, sans-serif;
-  font-size: 20px;
-  background-color: #FFFFFF;
-  padding: 1rem;
-  border: 1px solid transparent;
-  cursor: pointer;
-  border-radius: 30px;
-  position: relative;
-  transition: transform 0.3s ease;
-}
-
-.menu:hover {
-  transform: scale(1.1); /* Scale up on hover */
-}
-
-.hamburger{
-  display: flex;
-  flex-direction: column;
-}
-
-.line {
-  border-top: 2px solid black;
-  width: 1.5vw;
-  font-size: 10px;
-  margin-top: 0.5rem;
-}
-
-.line-half {
-  border-top: 2px solid transparent;
-  width: 0.7vw;
-  font-size: 10px;
-  margin-top: 0.5rem;
-}
-
-
-.line-half-color {
-  border-top: 2px solid black;
-  width: 0.7vw;
-  font-size: 10px;
-  margin-top: 0.5rem;
-}
-
-.line-break{
-  display: flex;
-  flex-direction: row;
-}
 
 .content-box h1 {
   font-family: 'Nasalization', sans-serif; 
