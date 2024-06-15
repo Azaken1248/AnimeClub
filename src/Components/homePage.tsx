@@ -1,9 +1,13 @@
 import IconDescription from "./IconDescription";
+import ContentDescription from "./ContentDescription";
+import Footer from "./Footer";
 
 const HomePage = () => {
   return (
     <>
-      <IconDescription></IconDescription>
+      <IconDescription />
+      <ContentDescription />
+      <Footer />
     </>
   );
 };
