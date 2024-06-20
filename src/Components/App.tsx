@@ -1,4 +1,4 @@
-import HomePage from "./homePage.tsx";
+import HomePage from "./HomePage";
 
 function App() {
   return <HomePage />;
