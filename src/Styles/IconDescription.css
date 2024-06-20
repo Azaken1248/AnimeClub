@@ -3,7 +3,6 @@
   src: url('../assets/fonts/nasalization-rg.otf') format('opentype');
 }
 
-
 .icon-description {
   display: flex;
   justify-content: center;
@@ -40,9 +39,8 @@
   position: relative;
   z-index: 2;
   padding: 1em;
-  margin-top: -12rem;
+  margin-top: -12rem; /* Initial margin-top for large screens */
 }
-
 
 .content-box h1 {
   font-family: 'Nasalization', sans-serif; 
@@ -69,7 +67,7 @@
   transition: transform 0.3s ease;
 }
 
-.scrollbar:hover{
+.scrollbar:hover {
   transform: scale(1.02);
 }
 
@@ -93,10 +91,12 @@
   z-index: -1;
 }
 
+/* Media Queries for Responsive Design */
+
 @media (max-width: 1200px) {
   .content-box {
     width: 90%;
-    margin-top: -10rem;
+    margin-top: -10rem; /* Adjusted margin-top for medium screens */
   }
 
   .content-box h1 {
@@ -108,7 +108,7 @@
   }
 
   .scrollbar {
-    gap: 30vw; 
+    gap: 30vw; /* Adjusted gap for medium screens */
   }
 
   .fa-angle-double-down {
@@ -123,7 +123,7 @@
 @media (max-width: 768px) {
   .content-box {
     width: 95%;
-    margin-top: -8rem;
+    margin-top: -8rem; /* Adjusted margin-top for small screens */
   }
 
   .content-box h1 {
@@ -135,7 +135,7 @@
   }
 
   .scrollbar {
-    gap: 20vw; 
+    gap: 20vw; /* Adjusted gap for small screens */
   }
 
   .fa-angle-double-down {
@@ -147,10 +147,12 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .content-box {
     width: 100%;
-    margin-top: -6rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -6rem; 
   }
 
   .content-box h1 {
@@ -162,7 +164,7 @@
   }
 
   .scrollbar {
-    gap: 10vw; 
+    gap: 10vw; /* Adjusted gap for extra small screens */
   }
 
   .fa-angle-double-down {

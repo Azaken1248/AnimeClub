@@ -36,3 +36,15 @@
     font-size: 40px;
     font-weight: 400;
 }
+
+@media (max-width: 600px){
+    .neko{
+        transform: scale(0.7) translateX(-250px) translateY(150px);
+    }
+    .footer-content{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+        font-size: 35px;
+    }
+}

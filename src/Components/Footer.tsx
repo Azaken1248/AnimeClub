@@ -3,7 +3,7 @@ import NekoPaw from "../assets/Misc/nekopaw.png";
 const Footer = () => {
   return (
     <section className="footer">
-      <div>
+      <div className="neko">
         <img src={NekoPaw} />
       </div>
       <div className="footer-content">The Footer</div>
