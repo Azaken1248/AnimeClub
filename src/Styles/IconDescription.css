@@ -91,12 +91,12 @@
   z-index: -1;
 }
 
-/* Media Queries for Responsive Design */
+
 
 @media (max-width: 1200px) {
   .content-box {
     width: 90%;
-    margin-top: -10rem; /* Adjusted margin-top for medium screens */
+    margin-top: -10rem;
   }
 
   .content-box h1 {
@@ -108,7 +108,7 @@
   }
 
   .scrollbar {
-    gap: 30vw; /* Adjusted gap for medium screens */
+    gap: 30vw; 
   }
 
   .fa-angle-double-down {
@@ -123,7 +123,7 @@
 @media (max-width: 768px) {
   .content-box {
     width: 95%;
-    margin-top: -8rem; /* Adjusted margin-top for small screens */
+    margin-top: -8rem; 
   }
 
   .content-box h1 {
@@ -135,7 +135,7 @@
   }
 
   .scrollbar {
-    gap: 20vw; /* Adjusted gap for small screens */
+    gap: 20vw;
   }
 
   .fa-angle-double-down {
@@ -164,7 +164,7 @@
   }
 
   .scrollbar {
-    gap: 10vw; /* Adjusted gap for extra small screens */
+    gap: 10vw;
   }
 
   .fa-angle-double-down {
@@ -173,5 +173,9 @@
 
   .fa-angle-double-down::before {
     font-size: 15vw;
+  }
+
+  .second-arrow {
+    display: none; 
   }
 }

@@ -15,11 +15,11 @@ const IconDescription = () => {
         <div className="scrollbar">
           <FontAwesomeIcon
             icon={faAngleDoubleDown}
-            className="fa-angle-double-down"
+            className="fa-angle-double-down first-arrow"
           />
           <FontAwesomeIcon
             icon={faAngleDoubleDown}
-            className="fa-angle-double-down"
+            className="fa-angle-double-down second-arrow"
           />
         </div>
       </div>
