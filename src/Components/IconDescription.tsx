@@ -4,6 +4,13 @@ import "../styles/IconDescription.css";
 
 import NavigationBar from "./NavigationBar";
 
+const handleScroll = () => {
+  window.scrollTo({
+    top: window.innerHeight,
+    behavior: "smooth",
+  });
+};
+
 const IconDescription = () => {
   return (
     <section className="icon-description">
@@ -12,7 +19,7 @@ const IconDescription = () => {
         <h1 className="title" data-text="ANIME REALM">
           ANIME REALM
         </h1>
-        <div className="scrollbar">
+        <div className="scrollbar" onClick={handleScroll}>
           <FontAwesomeIcon
             icon={faAngleDoubleDown}
             className="fa-angle-double-down first-arrow"
