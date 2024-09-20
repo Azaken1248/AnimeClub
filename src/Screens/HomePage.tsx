@@ -1,5 +1,5 @@
-import IconDescription from "../Components/HomePage/IconDescription";
-import ContentDescription from "../Components/HomePage/ContentDescription";
+import IconDescription from "../Components/Sections/IconDescription";
+import ContentDescription from "../Components/Sections/ContentDescription";
 import Footer from "../Components/Global/Footer";
 
 const HomePage = () => {
