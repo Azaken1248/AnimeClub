@@ -59,7 +59,11 @@
     font-size: 40px;
     font-weight: 400;
 }
-
+@media (max-width: 1921px){
+    .sakura{
+        transform: translateX(-5%);
+    }
+}
 @media (max-width: 1024px){
     .info{
         margin-left: -80%;

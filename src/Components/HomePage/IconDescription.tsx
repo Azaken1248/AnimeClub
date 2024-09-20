@@ -15,7 +15,7 @@ const IconDescription = () => {
   return (
     <section className="icon-description">
       <div className="content-box">
-        <NavigationBar />
+        <NavigationBar name={"About Us"} route={"AboutUs"} />
         <h1 className="title" data-text="ANIME REALM">
           ANIME REALM
         </h1>
